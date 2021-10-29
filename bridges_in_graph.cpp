@@ -1,14 +1,6 @@
 #include<iostream>
 #include <list>
-#define NIL -1
-using namespace std;
- 
-// A class that represents an undirected graph
-class Graph
-{
-    int V;    // No. of vertices
-    list<int> *adj;    // A dynamic array of adjacency lists
-    void bridgeUtil(int v, bool visited[], int disc[], int low[],
+il(int v, bool visited[], int disc[], int low[],
                     int parent[]);
 public:
     Graph(int V);   // Constructor
